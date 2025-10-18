@@ -25,10 +25,10 @@ Write-Host "`n1️⃣ Configurando settings GLOBAIS em: $globalSettingsPath" -Fo
 if (Test-Path $globalSettingsPath) {
     # Lê o arquivo existente
     $content = Get-Content $globalSettingsPath -Raw
-    
+
     # Remove comentários e trailing commas que causam erro JSON
     $content = $content -replace '//.*', '' -replace ',\s*}', '}' -replace ',\s*]', ']'
-    
+
     try {
         $settings = $content | ConvertFrom-Json -AsHashtable
     } catch {

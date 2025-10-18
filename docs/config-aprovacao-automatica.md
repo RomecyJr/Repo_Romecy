@@ -14,13 +14,13 @@ Este documento explica como configurar o VS Code para aprovar **automaticamente 
   "github.copilot.chat.terminalCmdApproval": {
     "/.*/": true  // Regex que captura QUALQUER comando
   },
-  
+
   // Habilita execução de comandos pelo Copilot
   "github.copilot.chat.runCommand.enabled": true,
-  
+
   // Desabilita confirmações de segurança de workspace
   "security.workspace.trust.enabled": false,
-  
+
   // Permite execução automática de tarefas
   "task.autoDetect": "on",
   "task.allowAutomaticTasks": "on"
@@ -110,5 +110,5 @@ Após aplicar as configurações e recarregar o VS Code:
 
 ---
 
-**Última atualização:** 18/10/2025  
+**Última atualização:** 18/10/2025
 **Autor:** Romecy Veiga (com assistência do GitHub Copilot)
