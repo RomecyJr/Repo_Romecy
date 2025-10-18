@@ -1,0 +1,22 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.renderWhitespace": "selection",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "explorer.experimental.fileNesting.enabled": true,
+  "explorer.experimental.fileNesting.patterns": {
+    "README.md": "README.*.md",
+    "docker-compose.yml": "docker-compose.*.yml,docker-compose.*.yaml",
+    "Makefile": "*.mk",
+    "package.json": "package-lock.json,pnpm-lock.yaml,yarn.lock",
+    ".env": ".env.*"
+  },
+
+  "[markdown]": { "editor.wordWrap": "on", "editor.rulers": [120] },
+  "[yaml]":     { "editor.tabSize": 2 },
+  "[python]":   { "editor.tabSize": 4 },
+  "[shellscript]": { "editor.tabSize": 4 },
+  "powershell.codeFormatting.useCorrectCasing": true
+}

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid",
+    "eamodio.gitlens",
+    "foxundermoon.shell-format",
+    "ms-vscode.powershell",
+    "pkief.material-icon-theme"
+  ]
+}
