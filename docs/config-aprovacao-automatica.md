@@ -4,6 +4,8 @@
 
 Este documento explica como configurar o VS Code para aprovar **automaticamente TODOS os comandos** executados pelo GitHub Copilot no terminal, sem necessidade de confirmação manual.
 
+> **⚡ Atenção:** Esta configuração é extremamente permissiva e remove todas as proteções de segurança. Use apenas em ambientes controlados de desenvolvimento.
+
 ## ⚙️ Configurações Aplicadas
 
 ### 1. **Settings do Workspace** (`.vscode/settings.json`)
