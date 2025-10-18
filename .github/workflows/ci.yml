@@ -1,17 +1,18 @@
 name: CI
-on: [push, pull_request]
+on:
+  push: { branches: ["main"] }
+  pull_request: { branches: ["main"] }
+
 jobs:
-  test:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Test rag-helpdesk-assistant (placeholder)
-        working-directory: rag-helpdesk-assistant
+        with: { python-version: "3.11" }
+      - name: Instalar pre-commit
         run: |
-          python -m venv .venv
-          source .venv/bin/activate
-          pip install -r requirements.txt pytest
-          pytest -q || true
+          pip install pre-commit
+          pre-commit install-hooks
+      - name: Rodar lints
+        run: pre-commit run --all-files

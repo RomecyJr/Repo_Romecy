@@ -1,16 +1,23 @@
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 .venv/
 .env
 .env.*
-# Node/others
+
+# Node/JS
 node_modules/
 dist/
-# OS
+coverage/
+
+# VS Code
+.vscode/*.log
+.history/
+
+# Docker
+**/.docker-cache/
+**/.build/
+
+# SO
 .DS_Store
 Thumbs.db
-# VSCode
-.vscode/
