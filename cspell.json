@@ -31,7 +31,35 @@
     "itsm",
     "helpdesk",
     "commitar",
-    "resetar"
+    "resetar",
+    "ensurepip",
+    "taskkill",
+    "microservice",
+    "monorepositório",
+    "kebab",
+    "markdownlint",
+    "Portfólio",
+    "Infra",
+    "Operações",
+    "Suporte",
+    "hardening",
+    "dashboards",
+    "workflows",
+    "readme",
+    "monorepo",
+    "pipx"
   ],
-  "ignorePaths": ["node_modules", "dist", ".git", ".venv", "**/*.lock", "scripts/**", "**/*.ps1", "**/*.sh", "**/*.txt"]
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    ".git",
+    ".venv",
+    "**/*.lock",
+    "scripts/**",
+    "**/*.ps1",
+    "**/*.sh",
+    "**/*.txt",
+    "docs/**",
+    "projetos/**"
+  ]
 }
