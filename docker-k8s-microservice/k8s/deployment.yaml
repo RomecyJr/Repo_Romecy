@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-ms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-ms
+  template:
+    metadata:
+      labels:
+        app: demo-ms
+    spec:
+      containers:
+      - name: app
+        image: romecyjr/demo-ms:latest
+        ports:
+        - containerPort: 5000

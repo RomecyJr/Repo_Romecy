@@ -1,0 +1,6 @@
+- name: Instalar atualizações críticas
+  win_updates:
+    category_names:
+      - CriticalUpdates
+      - SecurityUpdates
+    reboot: yes

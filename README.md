@@ -1,37 +1,17 @@
-# Repo_Romecy
+# Portfólio — Romecy Veiga
 
-Bem-vindo ao Repo_Romecy! Este é um repositório para desenvolvimento e aprendizado.
+Este repositório reúne **5 projetos práticos** alinhados a Infra + IA aplicada a Suporte/Operações:
 
-## 📋 Sobre
+1. **RAG Helpdesk Assistant** — FastAPI + LangChain + FAISS, Docker e CI.
+2. **ITSM Metrics Exporter** — Exporta métricas (mock Jira/Tiflux/OTRS) para Prometheus + dashboard Grafana.
+3. **Ansible Infra Baseline** — Hardening Linux + updates Windows (WinRM).
+4. **Zabbix + Grafana Starter** — LLD simples (discovery de discos) + dashboard.
+5. **Docker/K8s Microservice** — Microserviço Flask com Docker, Compose e manifests Kubernetes.
 
-Este repositório foi criado para armazenar projetos e códigos desenvolvidos durante o processo de aprendizagem e desenvolvimento.
+> Objetivo: demonstrar **aplicação prática** de automação, observabilidade e IA em suporte (redução de TMA/MTTR), com código **rodável** e documentação clara.
 
-## 🚀 Estrutura do Projeto
+## Como navegar
+Cada pasta possui seu próprio `README.md` com instruções de execução/teste e próximos passos.
 
-```
-/
-├── src/            # Código fonte
-├── docs/           # Documentação
-├── tests/          # Testes
-└── config/         # Arquivos de configuração
-```
-
-## 🛠️ Tecnologias Utilizadas
-
-- Git para controle de versão
-- GitHub para hospedagem do repositório
-
-## 📝 Como Contribuir
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📫 Contato
-
-RomecyJr - [GitHub](https://github.com/RomecyJr)
-
----
-⌚ Última atualização: 2025-10-18
+## Status
+![CI](https://github.com/RomecyJr/Repo_Romecy/actions/workflows/ci.yml/badge.svg)

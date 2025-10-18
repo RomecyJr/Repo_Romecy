@@ -1,0 +1,26 @@
+- name: Ensure ufw installed and enabled
+  apt:
+    name: ufw
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Default deny incoming
+  ufw:
+    direction: incoming
+    policy: deny
+  when: ansible_os_family == "Debian"
+
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: '22'
+    proto: tcp
+  when: ansible_os_family == "Debian"
+
+- name: Ensure common users exist
+  user:
+    name: "{{ item.name }}"
+    state: present
+    shell: /bin/bash
+  loop: "{{ common_users }}"
