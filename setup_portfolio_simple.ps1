@@ -560,7 +560,7 @@ git diff --cached --quiet
 if ($LASTEXITCODE -ne 0) {
     git commit -m "feat(portfolio): adiciona 5 projetos, docs e CI"
     Write-Host "✅ Commit realizado!" -ForegroundColor Green
-    
+
     git push -u origin main
     if ($LASTEXITCODE -eq 0) {
         Write-Host "`n✅ CONCLUÍDO! Repositório atualizado com sucesso!" -ForegroundColor Green
