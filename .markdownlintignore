@@ -1,0 +1,10 @@
+# Ignore documentation folders with many files
+docs/
+projetos/
+
+# Ignore dependencies and build outputs
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/

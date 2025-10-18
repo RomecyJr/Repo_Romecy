@@ -4,6 +4,7 @@ Este monorepositório reúne projetos práticos de **Infra + IA aplicada a Supor
 Cada projeto fica em `projetos/<nome>` com seu próprio `README.md`, testes e scripts.
 
 ## 🚀 Projetos
+
 - **RAG Helpdesk Assistant** — FastAPI + LangChain + FAISS, Docker e CI.
 - **ITSM Metrics Exporter** — Exporta métricas mock (Jira/Tiflux/OTRS) para Prometheus + dashboard Grafana.
 - **Ansible Infra Baseline** — Hardening Linux + updates Windows (WinRM).
@@ -13,6 +14,7 @@ Cada projeto fica em `projetos/<nome>` com seu próprio `README.md`, testes e sc
 > Consulte `docs/indice.md` para navegação detalhada.
 
 ## 🧰 Como rodar localmente
+
 ```bash
 pipx install pre-commit || pip install pre-commit
 pre-commit install
