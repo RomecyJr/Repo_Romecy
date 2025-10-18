@@ -1,0 +1,101 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║         📦 O QUE TEM NESTA PASTA - ITSM METRICS EXPORTER            ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+🎯 OBJETIVO DESTA PASTA:
+   Transformar dados do ServiceNow em gráficos bonitos
+
+📝 EXPLICAÇÃO SIMPLES:
+   Empresas usam ServiceNow para gerenciar chamados de TI.
+   Este projeto puxa esses dados e transforma em gráficos e dashboards
+   automáticos que mostram: quantos chamados abertos, tempo de resposta,
+   equipe mais ocupada, etc.
+
+🔧 O QUE FAZ:
+   ✓ Conecta no ServiceNow automaticamente
+   ✓ Coleta métricas (chamados, incidentes, tempo)
+   ✓ Expõe dados no formato Prometheus
+   ✓ Cria dashboards no Grafana
+
+💻 TECNOLOGIA USADA:
+   → Python (coleta dados)
+   → Prometheus (armazena métricas)
+   → Grafana (cria gráficos)
+   → ServiceNow API (fonte dos dados)
+
+📂 ESTRUTURA DE ARQUIVOS:
+
+   📄 exporter.py ..................... Código que coleta dados
+   📄 requirements.txt ................ Bibliotecas Python necessárias
+
+   📁 grafana/
+      └─ dashboard.json ............... Template do painel visual
+
+   📄 README.md ....................... Manual completo
+
+═══════════════════════════════════════════════════════════════════════
+
+🎓 PARA INICIANTES:
+
+   Imagine uma planilha Excel gigante de chamados que ninguém quer ler.
+   Este projeto transforma isso em:
+
+   📊 Gráficos de pizza mostrando tipos de chamado
+   📈 Linha do tempo de chamados por dia
+   🚦 Semáforos: verde (OK), amarelo (atenção), vermelho (crítico)
+
+   Tudo atualizando sozinho, em tempo real!
+
+═══════════════════════════════════════════════════════════════════════
+
+📖 ANALOGIA DO DIA A DIA:
+
+   É como ter um assistente que:
+   1. Lê todos os emails de reclamação (ServiceNow)
+   2. Conta quantos são urgentes, quantos foram resolvidos
+   3. Cria um resumo visual automático
+   4. Atualiza de hora em hora
+
+   Ao invés de você ler 500 emails, olha 1 dashboard!
+
+═══════════════════════════════════════════════════════════════════════
+
+🚀 CASO DE USO REAL:
+
+   ANTES:
+   - Gerente pergunta: "Quantos chamados críticos temos?"
+   - Analista gasta 30 min filtrando planilha
+   - Resposta já está desatualizada
+
+   COM ESTE PROJETO:
+   - Gerente abre dashboard no navegador
+   - Vê em tempo real: 5 críticos, 23 abertos, tempo médio 2h
+   - Pode filtrar por equipe, tipo, cliente, etc.
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 FLUXO DE DADOS:
+
+   ServiceNow → exporter.py → Prometheus → Grafana → Você!
+   (Chamados)   (Coleta)     (Armazena)  (Visualiza) (Decisões)
+
+═══════════════════════════════════════════════════════════════════════
+
+📊 MÉTRICAS COLETADAS:
+
+   ✓ Total de incidentes abertos
+   ✓ Tempo médio de resolução
+   ✓ SLA cumprido vs. violado
+   ✓ Chamados por categoria
+   ✓ Desempenho por técnico/equipe
+   ✓ Tendências (melhorando ou piorando?)
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 PALAVRAS-CHAVE:
+   #Monitoramento #ITSM #ServiceNow #Grafana #Prometheus
+   #Métricas #Dashboard #Observabilidade #IT
+
+═══════════════════════════════════════════════════════════════════════

@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║             📦 O QUE TEM NESTA PASTA - ANSIBLE                      ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+🎯 OBJETIVO DESTA PASTA:
+   Automatizar configurações de segurança em servidores
+
+📝 EXPLICAÇÃO SIMPLES:
+   Imagine que você precisa configurar 100 computadores com as mesmas
+   regras de segurança. Em vez de fazer manualmente em cada um,
+   este projeto faz tudo automaticamente!
+
+🔧 O QUE FAZ:
+   ✓ Configura firewall automaticamente
+   ✓ Instala atualizações de segurança
+   ✓ Bloqueia acessos não autorizados
+   ✓ Cria regras de senha forte
+
+💻 TECNOLOGIA USADA:
+   → Ansible (ferramenta de automação)
+   → YAML (linguagem de configuração, tipo receita de bolo)
+
+📂 ESTRUTURA DE ARQUIVOS:
+
+   📁 playbooks/
+      ├─ linux_hardening.yml .......... Receitas para Linux
+      └─ windows_updates.yml .......... Receitas para Windows
+
+   📁 roles/
+      ├─ linux_hardening/ ............. Regras de segurança Linux
+      └─ windows_updates/ ............. Atualizações Windows
+
+   📁 inventories/
+      └─ dev/
+         └─ hosts.ini ................. Lista de computadores
+
+   📁 group_vars/
+      ├─ linux.yml .................... Configurações Linux
+      └─ windows.yml .................. Configurações Windows
+
+   📄 README.md ...................... Manual completo
+
+═══════════════════════════════════════════════════════════════════════
+
+🎓 PARA INICIANTES:
+
+   Pense assim: É como ter um assistente robô que vai em cada
+   computador e configura tudo certinho, seguindo uma lista de tarefas.
+
+   O Ansible lê os arquivos .yml (como receitas) e executa os comandos
+   em todos os servidores da lista (hosts.ini).
+
+═══════════════════════════════════════════════════════════════════════
+
+📖 ANALOGIA DO DIA A DIA:
+
+   É como ter um manual de instruções (playbooks) que um robô
+   (Ansible) segue para:
+   - Trancar todas as portas (firewall)
+   - Trocar as fechaduras (senhas)
+   - Instalar alarmes (monitoramento)
+   - Atualizar tudo (patches de segurança)
+
+═══════════════════════════════════════════════════════════════════════
+
+🚀 CASO DE USO REAL:
+
+   Empresa com 50 servidores precisa aplicar atualização de segurança
+   urgente. Em vez de 1 pessoa levar 8 horas fazendo manualmente,
+   o Ansible faz em 10 minutos em todos ao mesmo tempo!
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 PALAVRAS-CHAVE:
+   #Automação #Segurança #Infraestrutura #DevOps #Ansible
+   #ConfiguraçãoAutomática #IT #Servidores
+
+═══════════════════════════════════════════════════════════════════════

@@ -1,0 +1,166 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║        📦 O QUE TEM NESTA PASTA - ZABBIX & GRAFANA STARTER          ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+🎯 OBJETIVO DESTA PASTA:
+   Monitorar servidores e receber alertas antes de problemas acontecerem
+
+📝 EXPLICAÇÃO SIMPLES:
+   Servidores podem parar de funcionar sem aviso. Este projeto vigia
+   constantemente: CPU, memória, disco, rede... e avisa ANTES de travar!
+   É como ter um enfermeiro 24h monitorando os sinais vitais dos PCs.
+
+🔧 O QUE FAZ:
+   ✓ Monitora saúde de servidores em tempo real
+   ✓ Detecta discos cheios, CPU alta, memória baixa
+   ✓ Envia alertas por email/SMS quando algo está errado
+   ✓ Cria gráficos e dashboards de infraestrutura
+
+💻 TECNOLOGIA USADA:
+   → Zabbix (ferramenta de monitoramento)
+   → Grafana (visualização de dados)
+   → Python (scripts de descoberta)
+
+📂 ESTRUTURA DE ARQUIVOS:
+
+   📁 grafana/
+      └─ infra_overview.json .......... Dashboard de infraestrutura
+
+   📁 lld/
+      └─ disks_discovery.py ........... Script que descobre discos
+
+   📄 README.md ....................... Manual completo
+
+═══════════════════════════════════════════════════════════════════════
+
+🎓 PARA INICIANTES:
+
+   ZABBIX = Médico que mede sinais vitais
+   - Pressão (CPU)
+   - Temperatura (aquecimento)
+   - Respiração (tráfego de rede)
+   - Batimento (uso de disco)
+
+   GRAFANA = Painel do hospital
+   - Gráficos bonitos
+   - Histórico de saúde
+   - Alertas visuais
+
+═══════════════════════════════════════════════════════════════════════
+
+📖 ANALOGIA DO DIA A DIA:
+
+   Imagine que você tem 10 carros (servidores):
+
+   SEM MONITORAMENTO:
+   - Carro para e você descobre quando precisa usar
+   - Não sabe que óleo estava baixo
+   - Conserto é mais caro e urgente
+
+   COM MONITORAMENTO:
+   - Painel avisa "óleo baixo em 3 dias"
+   - Você troca antes de quebrar
+   - Evita prejuízo e stress
+
+═══════════════════════════════════════════════════════════════════════
+
+🚀 CASO DE USO REAL:
+
+   SITUAÇÃO: E-commerce Black Friday
+
+   3:00 AM - Disco do banco de dados em 85%
+   → Zabbix detecta e alerta equipe
+   → Time adiciona espaço antes das 9:00 AM
+   → Vendas não param, cliente não sente nada
+
+   SEM MONITORAMENTO:
+   9:30 AM - Site cai por disco cheio
+   → Perda de R$ 500.000 em vendas
+   → Clientes revoltados nas redes sociais
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 O QUE É MONITORADO:
+
+   🖥️ SERVIDORES:
+      ✓ CPU (% de uso)
+      ✓ Memória RAM (livre/usada)
+      ✓ Disco (espaço disponível)
+      ✓ Temperatura
+
+   🌐 REDE:
+      ✓ Tráfego de entrada/saída
+      ✓ Pacotes perdidos
+      ✓ Latência (ping)
+
+   📦 APLICAÇÕES:
+      ✓ Serviços rodando ou parados
+      ✓ Tempo de resposta
+      ✓ Erros nos logs
+
+═══════════════════════════════════════════════════════════════════════
+
+🔔 TIPOS DE ALERTAS:
+
+   🟢 INFORMAÇÃO: "Backup concluído com sucesso"
+   🟡 ATENÇÃO: "CPU em 70%, observar"
+   🟠 PROBLEMA: "Disco em 90%, ação recomendada"
+   🔴 CRÍTICO: "Servidor não responde, ação URGENTE!"
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 FLUXO DE TRABALHO:
+
+   1. Zabbix coleta dados a cada 1 minuto
+   2. Compara com limites configurados
+   3. Se ultrapassar limite → ALERTA!
+   4. Grafana mostra tudo visualmente
+   5. Equipe age antes do problema virar crise
+
+═══════════════════════════════════════════════════════════════════════
+
+📊 DASHBOARDS INCLUSOS:
+
+   📈 Visão Geral de Infraestrutura:
+      - Todos os servidores em um painel
+      - Mapa de calor (verde = OK, vermelho = problema)
+      - Gráficos de tendência
+
+   💾 Monitoramento de Discos:
+      - Espaço usado/livre
+      - Previsão de quando vai encher
+      - Histórico de crescimento
+
+═══════════════════════════════════════════════════════════════════════
+
+🔑 CONCEITOS-CHAVE:
+
+   LLD (Low-Level Discovery):
+      Script Python que descobre automaticamente novos discos,
+      interfaces de rede, etc. Não precisa configurar manualmente!
+
+   TRIGGER:
+      Regra que dispara alerta. Ex: "Se CPU > 80% por 5 min → alerta"
+
+   ITEM:
+      Métrica individual. Ex: "uso_cpu_servidor01"
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 BENEFÍCIOS:
+
+   ✅ Prevenção: Resolve antes de virar problema
+   ✅ Histórico: Sabe quando e por que algo aconteceu
+   ✅ Planejamento: Vê tendências e planeja upgrades
+   ✅ Economia: Evita downtimes caros
+   ✅ Tranquilidade: Dorme sabendo que está sendo vigiado
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 PALAVRAS-CHAVE:
+   #Monitoramento #Zabbix #Grafana #Infraestrutura #SRE
+   #Observabilidade #DevOps #Alertas #Métricas
+
+═══════════════════════════════════════════════════════════════════════
