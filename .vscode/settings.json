@@ -18,5 +18,24 @@
   "[yaml]":     { "editor.tabSize": 2 },
   "[python]":   { "editor.tabSize": 4 },
   "[shellscript]": { "editor.tabSize": 4 },
-  "powershell.codeFormatting.useCorrectCasing": true
+  "powershell.codeFormatting.useCorrectCasing": true,
+
+  // ========================================
+  // APROVAÇÃO AUTOMÁTICA TOTAL - SEM CONFIRMAÇÕES
+  // ========================================
+
+  // Aprovar TODOS os comandos do terminal automaticamente
+  "github.copilot.chat.terminalCmdApproval": {
+    "/.*/": true
+  },
+
+  // Aprovar comandos específicos explicitamente
+  "github.copilot.chat.runCommand.enabled": true,
+
+  // Desabilitar confirmações de segurança
+  "security.workspace.trust.enabled": false,
+
+  // Permitir execução automática de tarefas
+  "task.autoDetect": "on",
+  "task.allowAutomaticTasks": "on"
 }
